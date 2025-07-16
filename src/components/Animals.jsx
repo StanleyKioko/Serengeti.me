@@ -1,4 +1,10 @@
 import React from 'react'
+import lions from '../assets/lions.jpg'
+import Cheetahs from '../assets/Cheetahs.jpg'
+import elephants from '../assets/Elephants.jpg'
+import zebras from '../assets/Zebras.jpg'
+import Rhinoceros from '../assets/Rhinoceros.jpg'
+import buffalo from '../assets/Buffalo.jpg'
 
 const Animals = () => {
   return (
@@ -15,8 +21,7 @@ const Animals = () => {
           {/* Lion Card 1 */}
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-yellow-700 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🦁</span>
+              <img src={lions} alt="Lions" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Lions</h2>
@@ -30,8 +35,7 @@ const Animals = () => {
           {/* Lion Card 2 - Changed to Tiger */}
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-orange-800 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🐯</span>
+              <img src={Cheetahs} alt="Cheetahs" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Cheetahs</h2>
@@ -45,8 +49,7 @@ const Animals = () => {
           {/* Elephant Card */}
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-gray-700 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🐘</span>
+              <img src={elephants} alt="Elephants" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Elephants</h2>
@@ -60,8 +63,7 @@ const Animals = () => {
           {/* Zebra Card */}
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-indigo-900 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🦓</span>
+              <img src={zebras} alt="Zebras" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Zebras</h2>
@@ -75,8 +77,7 @@ const Animals = () => {
           {/* Added two more cards for better grid balance */}
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-green-900 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🦏</span>
+              <img src={Rhinoceros} alt="Rhinoceros" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Rhinoceros</h2>
@@ -89,8 +90,7 @@ const Animals = () => {
           
           <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform hover:scale-105">
             <div className="h-48 bg-blue-900 flex items-center justify-center">
-              {/* Image placeholder - replace with actual image */}
-              <span className="text-6xl">🦬</span>
+              <img src={buffalo} alt="Buffalo" className="w-full h-full object-cover" />
             </div>
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Buffalo</h2>

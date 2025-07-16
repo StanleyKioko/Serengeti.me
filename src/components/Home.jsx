@@ -1,5 +1,9 @@
 import React from 'react'
 import background from '../assets/background.jpg';
+import lions from '../assets/lions.jpg'
+import Cheetahs from '../assets/Cheetahs.jpg'
+import elephants from '../assets/Elephants.jpg'
+import zebras from '../assets/Zebras.jpg'
 
 const Home = () => {
   return (
@@ -58,9 +62,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Lion Card */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="h-48 bg-yellow-900 flex items-center justify-center">
-                <span className="text-6xl">🦁</span>
-              </div>
+              <img src={lions} alt="Lions" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Lions</h4>
                 <p className="text-gray-400">The kings of the Serengeti, ruling the savannah with their majestic presence.</p>
@@ -75,9 +77,7 @@ const Home = () => {
             
             {/* Elephant Card */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="h-48 bg-gray-700 flex items-center justify-center">
-                <span className="text-6xl">🐘</span>
-              </div>
+              <img src={elephants} alt="Elephants" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Elephants</h4>
                 <p className="text-gray-400">Intelligent gentle giants known for their remarkable memory and social bonds.</p>
@@ -92,9 +92,7 @@ const Home = () => {
             
             {/* Zebra Card */}
             <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transform hover:scale-105 transition-all duration-300">
-              <div className="h-48 bg-indigo-900 flex items-center justify-center">
-                <span className="text-6xl">🦓</span>
-              </div>
+              <img src={zebras} alt="Zebras" className="w-full h-48 object-cover" />
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Zebras</h4>
                 <p className="text-gray-400">Known for their distinctive stripes and social herds that roam the plains.</p>

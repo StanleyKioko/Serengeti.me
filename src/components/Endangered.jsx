@@ -1,5 +1,9 @@
 import React from 'react'
 import { FaInfoCircle, FaArrowRight } from 'react-icons/fa'
+import blackrhino from '../assets/Black Rhino.jpg'
+import africanwilddog from '../assets/African Wild Dog.jpg'
+import grevyszebra from '../assets/Grevys Zebra.jpg'
+
 
 const Endangered = () => {
   return (
@@ -40,10 +44,7 @@ const Endangered = () => {
           {/* Black Rhino Card */}
           <div className="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-red-900/20 hover:transform hover:scale-[1.02] transition-all duration-300">
             <div className="h-56 bg-gray-800 overflow-hidden relative">
-              {/* Replace with actual image */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-gray-700 text-9xl font-bold">
-                🦏
-              </div>
+              <img src={blackrhino} alt="Black Rhino" className="w-full h-full object-cover" />
               <div className="absolute top-4 left-4">
                 <span className="bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">
                   CRITICALLY ENDANGERED
@@ -76,10 +77,7 @@ const Endangered = () => {
           {/* African Wild Dog Card */}
           <div className="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-orange-900/20 hover:transform hover:scale-[1.02] transition-all duration-300">
             <div className="h-56 bg-gray-800 overflow-hidden relative">
-              {/* Replace with actual image */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-gray-700 text-9xl font-bold">
-                🐕
-              </div>
+              <img src={africanwilddog} alt="African Wild Dog" className="w-full h-full object-cover" />
               <div className="absolute top-4 left-4">
                 <span className="bg-orange-500 text-white px-3 py-1 rounded-full text-xs font-bold">
                   ENDANGERED
@@ -112,10 +110,7 @@ const Endangered = () => {
           {/* Grevy's Zebra Card */}
           <div className="bg-gray-900/60 backdrop-blur-sm border border-gray-800 rounded-xl overflow-hidden shadow-xl hover:shadow-yellow-900/20 hover:transform hover:scale-[1.02] transition-all duration-300">
             <div className="h-56 bg-gray-800 overflow-hidden relative">
-              {/* Replace with actual image */}
-              <div className="absolute inset-0 flex items-center justify-center bg-gray-800 text-gray-700 text-9xl font-bold">
-                🦓
-              </div>
+              <img src={grevyszebra} alt="Grevy's Zebra" className="w-full h-full object-cover" />
               <div className="absolute top-4 left-4">
                 <span className="bg-yellow-500 text-gray-900 px-3 py-1 rounded-full text-xs font-bold">
                   VULNERABLE

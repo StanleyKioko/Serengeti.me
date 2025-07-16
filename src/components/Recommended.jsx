@@ -1,5 +1,9 @@
 import React, { useState } from 'react'
 import { FaChevronRight, FaEnvelope, FaCheck } from 'react-icons/fa'
+import cheetah from '../assets/Cheetahs.jpg'
+import elephant from '../assets/Elephants.jpg'
+import giraffe from '../assets/Giraffe.jpg'
+import humpbackWhale from '../assets/Humpback Whale.jpg'
 
 const Recommended = () => {
   const [email, setEmail] = useState('');
@@ -37,10 +41,7 @@ const Recommended = () => {
             {/* Cheetah Card */}
             <div className="min-w-[300px] max-w-[350px] snap-center bg-gradient-to-br from-yellow-900/40 to-yellow-700/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-yellow-900/30 shadow-xl">
               <div className="h-64 bg-yellow-800/30 relative overflow-hidden">
-                {/* Replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center text-9xl text-yellow-700/40 font-bold">
-                  🐆
-                </div>
+                <img src={cheetah} alt="Cheetah" className="w-full h-full object-cover" />
                 <div className="absolute top-0 right-0 bg-yellow-500 text-black py-1 px-4 rounded-bl-lg font-semibold text-sm">
                   FASTEST
                 </div>
@@ -65,10 +66,7 @@ const Recommended = () => {
             {/* Elephant Card */}
             <div className="min-w-[300px] max-w-[350px] snap-center bg-gradient-to-br from-gray-900/40 to-gray-700/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-gray-700/30 shadow-xl">
               <div className="h-64 bg-gray-800/30 relative overflow-hidden">
-                {/* Replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center text-9xl text-gray-700/40 font-bold">
-                  🐘
-                </div>
+                <img src={elephant} alt="Elephant" className="w-full h-full object-cover" />
                 <div className="absolute top-0 right-0 bg-gray-600 text-white py-1 px-4 rounded-bl-lg font-semibold text-sm">
                   LARGEST
                 </div>
@@ -93,10 +91,7 @@ const Recommended = () => {
             {/* Giraffe Card */}
             <div className="min-w-[300px] max-w-[350px] snap-center bg-gradient-to-br from-orange-900/40 to-orange-700/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-orange-900/30 shadow-xl">
               <div className="h-64 bg-orange-800/30 relative overflow-hidden">
-                {/* Replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center text-9xl text-orange-700/40 font-bold">
-                  🦒
-                </div>
+                <img src={giraffe} alt="Giraffe" className="w-full h-full object-cover" />
                 <div className="absolute top-0 right-0 bg-orange-500 text-white py-1 px-4 rounded-bl-lg font-semibold text-sm">
                   TALLEST
                 </div>
@@ -121,10 +116,7 @@ const Recommended = () => {
             {/* Humpback Whale Card */}
             <div className="min-w-[300px] max-w-[350px] snap-center bg-gradient-to-br from-blue-900/40 to-blue-700/10 backdrop-blur-sm rounded-2xl overflow-hidden border border-blue-900/30 shadow-xl">
               <div className="h-64 bg-blue-800/30 relative overflow-hidden">
-                {/* Replace with actual image */}
-                <div className="absolute inset-0 flex items-center justify-center text-9xl text-blue-700/40 font-bold">
-                  🐋
-                </div>
+                <img src={humpbackWhale} alt="Humpback Whale" className="w-full h-full object-cover" />
                 <div className="absolute top-0 right-0 bg-blue-500 text-white py-1 px-4 rounded-bl-lg font-semibold text-sm">
                   AQUATIC
                 </div>
