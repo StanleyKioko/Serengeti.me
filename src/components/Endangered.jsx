@@ -6,6 +6,13 @@ import grevyszebra from '../assets/Grevys Zebra.jpg'
 
 
 const Endangered = () => {
+  // Define URLs for the "Learn More" buttons
+  const learnMoreUrls = {
+    blackRhino: "https://www.worldwildlife.org/species/black-rhino",
+    africanWildDog: "https://www.worldwildlife.org/species/african-wild-dog",
+    grevysZebra: "https://www.worldwildlife.org/species/grevy-s-zebra"
+  };
+
   return (
     <div id="endangered" className="bg-gradient-to-b from-[#000300] to-[#0a192f] min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
@@ -66,10 +73,15 @@ const Endangered = () => {
                   <span className="text-xs text-gray-500">Population</span>
                   <p className="text-red-400 font-bold">~5,500 left</p>
                 </div>
-                <button className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition-all">
+                <a 
+                  href={learnMoreUrls.blackRhino}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition-all"
+                >
                   Learn More
                   <FaArrowRight className="text-sm" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -99,10 +111,15 @@ const Endangered = () => {
                   <span className="text-xs text-gray-500">Population</span>
                   <p className="text-orange-400 font-bold">~6,600 left</p>
                 </div>
-                <button className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition-all">
+                <a 
+                  href={learnMoreUrls.africanWildDog}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-5 py-2 rounded-lg flex items-center gap-2 transition-all"
+                >
                   Learn More
                   <FaArrowRight className="text-sm" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -132,10 +149,15 @@ const Endangered = () => {
                   <span className="text-xs text-gray-500">Population</span>
                   <p className="text-yellow-400 font-bold">~2,000 left</p>
                 </div>
-                <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-gray-900 px-5 py-2 rounded-lg flex items-center gap-2 transition-all">
+                <a 
+                  href={learnMoreUrls.grevysZebra}
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-gray-900 px-5 py-2 rounded-lg flex items-center gap-2 transition-all"
+                >
                   Learn More
                   <FaArrowRight className="text-sm" />
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -147,9 +169,14 @@ const Endangered = () => {
           <p className="text-gray-300 max-w-3xl mx-auto mb-8">
             Conservation efforts need your support. Every contribution helps protect these endangered animals and their habitats for future generations.
           </p>
-          <button className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300">
+          <a 
+            href="https://www.worldwildlife.org/initiatives/wildlife-conservation" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-white hover:bg-gray-100 text-gray-900 font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+          >
             Donate to Conservation
-          </button>
+          </a>
         </div>
       </div>
     </div>

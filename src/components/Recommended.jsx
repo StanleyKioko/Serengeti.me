@@ -18,6 +18,14 @@ const Recommended = () => {
     }
   };
 
+  // Define URLs for the "Learn More" buttons
+  const learnMoreUrls = {
+    cheetah: "https://www.worldwildlife.org/species/cheetah",
+    elephant: "https://www.worldwildlife.org/species/elephant",
+    giraffe: "https://www.worldwildlife.org/species/giraffe",
+    humpbackWhale: "https://www.worldwildlife.org/species/humpback-whale"
+  };
+
   return (
     <div id="recommended" className="bg-[#000300] min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto">
@@ -56,9 +64,14 @@ const Recommended = () => {
                     <span className="w-2 h-2 rounded-full bg-green-500 mt-2"></span>
                     <span className="text-sm text-green-400">Conservation: Vulnerable</span>
                   </div>
-                  <button className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all">
+                  <a 
+                    href={learnMoreUrls.cheetah}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all"
+                  >
                     Learn More <FaChevronRight size={12} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -81,9 +94,14 @@ const Recommended = () => {
                     <span className="w-2 h-2 rounded-full bg-yellow-500 mt-2"></span>
                     <span className="text-sm text-yellow-400">Conservation: Vulnerable</span>
                   </div>
-                  <button className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all">
+                  <a 
+                    href={learnMoreUrls.elephant}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all"
+                  >
                     Learn More <FaChevronRight size={12} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -106,9 +124,14 @@ const Recommended = () => {
                     <span className="w-2 h-2 rounded-full bg-red-500 mt-2"></span>
                     <span className="text-sm text-red-400">Conservation: Endangered</span>
                   </div>
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all">
+                  <a 
+                    href={learnMoreUrls.giraffe}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all"
+                  >
                     Learn More <FaChevronRight size={12} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -131,9 +154,14 @@ const Recommended = () => {
                     <span className="w-2 h-2 rounded-full bg-green-500 mt-2"></span>
                     <span className="text-sm text-green-400">Conservation: Least Concern</span>
                   </div>
-                  <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all">
+                  <a 
+                    href={learnMoreUrls.humpbackWhale}
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-lg flex items-center gap-1 font-medium transition-all"
+                  >
                     Learn More <FaChevronRight size={12} />
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
