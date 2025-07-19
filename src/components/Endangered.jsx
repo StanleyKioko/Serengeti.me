@@ -7,7 +7,7 @@ import grevyszebra from '../assets/Grevys Zebra.jpg'
 
 const Endangered = () => {
   return (
-    <div className="bg-gradient-to-b from-[#000300] to-[#0a192f] min-h-screen py-16 px-4 sm:px-6 lg:px-8">
+    <div id="endangered" className="bg-gradient-to-b from-[#000300] to-[#0a192f] min-h-screen py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">

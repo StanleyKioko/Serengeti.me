@@ -4,7 +4,7 @@ import { Link } from 'react-scroll'
 
 const Footer = () => {
   return (
-    <footer className="bg-[#000300] text-gray-400">
+    <footer id='footer' className="bg-[#000300] text-gray-400">
       {/* Top section with links */}
       <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">

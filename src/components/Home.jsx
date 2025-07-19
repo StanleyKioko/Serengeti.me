@@ -4,10 +4,11 @@ import lions from '../assets/lions.jpg'
 import Cheetahs from '../assets/Cheetahs.jpg'
 import elephants from '../assets/Elephants.jpg'
 import zebras from '../assets/Zebras.jpg'
+import { Link } from 'react-scroll'
 
 const Home = () => {
   return (
-    <div className="min-h-screen bg-[#000300]">
+    <div id="home" className="min-h-screen bg-[#000300]">
       {/* Hero Section with Full-Height Background */}
       <div 
         className="w-full h-screen bg-cover bg-center bg-fixed relative" 
@@ -33,23 +34,35 @@ const Home = () => {
             </p>
             
             <div className="mt-10">
-              <button className="px-8 py-3 bg-yellow-500 text-gray-900 font-bold rounded-full hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <Link
+                to="animals"
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="px-8 py-3 bg-yellow-500 text-gray-900 font-bold rounded-full hover:bg-yellow-400 transform hover:scale-105 transition-all duration-300 shadow-lg inline-block cursor-pointer"
+              >
                 Explore The Wilderness
-              </button>
+              </Link>
             </div>
             
             {/* Scroll indicator */}
-            <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <Link
+              to="featured-animals"
+              smooth={true}
+              duration={800}
+              offset={-80}
+              className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce cursor-pointer"
+            >
               <svg className="w-6 h-6 text-white" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" stroke="currentColor">
                 <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
               </svg>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
       
       {/* Featured Animals Section */}
-      <div className="py-16 px-4 sm:px-6 lg:px-8 bg-[#000300]">
+      <div id="featured-animals" className="py-16 px-4 sm:px-6 lg:px-8 bg-[#000300]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <h3 className="text-3xl font-bold text-white mb-4">Animals of the Serengeti</h3>
@@ -66,12 +79,18 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Lions</h4>
                 <p className="text-gray-400">The kings of the Serengeti, ruling the savannah with their majestic presence.</p>
-                <button className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center">
+                <Link 
+                  to="animals"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
             
@@ -81,12 +100,18 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Elephants</h4>
                 <p className="text-gray-400">Intelligent gentle giants known for their remarkable memory and social bonds.</p>
-                <button className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center">
+                <Link
+                  to="animals"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
             
@@ -96,21 +121,33 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Zebras</h4>
                 <p className="text-gray-400">Known for their distinctive stripes and social herds that roam the plains.</p>
-                <button className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center">
+                <Link
+                  to="animals"
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
             </div>
           </div>
           
           {/* View all animals button */}
           <div className="text-center mt-12">
-            <button className="px-8 py-3 border-2 border-yellow-500 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300">
+            <Link
+              to="animals"
+              smooth={true}
+              duration={500}
+              offset={-80}
+              className="px-8 py-3 border-2 border-yellow-500 text-yellow-500 font-bold rounded-full hover:bg-yellow-500 hover:text-gray-900 transition-all duration-300 inline-block cursor-pointer"
+            >
               Discover All Wildlife
-            </button>
+            </Link>
           </div>
         </div>
       </div>

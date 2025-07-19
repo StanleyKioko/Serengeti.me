@@ -8,7 +8,7 @@ import buffalo from '../assets/Buffalo.jpg'
 
 const Animals = () => {
   return (
-    <div className="bg-[#000300] min-h-screen p-6 md:p-12">
+    <div id="animals" className="bg-[#000300] min-h-screen p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-12">

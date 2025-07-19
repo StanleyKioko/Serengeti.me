@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import {FaBars, FaTimes} from 'react-icons/fa'
-import {Link } from 'react-scroll'
-import { FaPaw } from 'react-icons/fa'
+import {Link} from 'react-scroll'
+import {FaPaw} from 'react-icons/fa'
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
@@ -41,33 +41,64 @@ const Navbar = () => {
                 {/* Desktop Menu */}
                 <ul className="hidden lg:flex items-center gap-1">
                     <li>
-                        <Link to="home" smooth={true} duration={500} 
-                              className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block">
+                        <Link 
+                            to="home" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={-80}
+                            className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block"
+                        >
                             Home
                         </Link>
                     </li>
                     <li>
-                        <Link to="parks" smooth={true} duration={500} 
-                              className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block">
-                            Parks
+                        <Link 
+                            to="animals" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={-80}
+                            className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block"
+                        >
+                            Animals
                         </Link>
                     </li>
                     <li>
-                        <Link to="attraction-points" smooth={true} duration={500} 
-                              className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block">
-                            Attractions
+                        <Link 
+                            to="endangered" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={-80}
+                            className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block"
+                        >
+                            Endangered
                         </Link>
                     </li>
                     <li>
-                        <Link to="accommodation" smooth={true} duration={500} 
-                              className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block">
-                            Accommodation
+                        <Link 
+                            to="recommended" 
+                            spy={true} 
+                            smooth={true} 
+                            duration={500} 
+                            offset={-80}
+                            className="text-white px-4 py-2 rounded-full hover:bg-white/10 transition-all cursor-pointer block"
+                        >
+                            Recommended
                         </Link>
                     </li>
                     <li className="ml-4">
-                        <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium">
+                        <Link
+                            to="newsletter"
+                            spy={true}
+                            smooth={true}
+                            duration={500}
+                            offset={-80}
+                            className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 font-medium cursor-pointer"
+                        >
                             Subscribe
-                        </button>
+                        </Link>
                     </li>
                 </ul>
 
@@ -91,8 +122,10 @@ const Navbar = () => {
                             <Link 
                                 onClick={handleClick} 
                                 to="home" 
+                                spy={true}
                                 smooth={true} 
                                 duration={500}
+                                offset={-80}
                                 className="text-white text-2xl font-medium hover:text-yellow-500 transition-colors"
                             >
                                 Home
@@ -101,40 +134,54 @@ const Navbar = () => {
                         <li>
                             <Link 
                                 onClick={handleClick} 
-                                to="parks" 
+                                to="animals" 
+                                spy={true}
                                 smooth={true} 
                                 duration={500}
+                                offset={-80}
                                 className="text-white text-2xl font-medium hover:text-yellow-500 transition-colors"
                             >
-                                Parks
+                                Animals
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 onClick={handleClick} 
-                                to="attraction-points" 
+                                to="endangered" 
+                                spy={true}
                                 smooth={true} 
                                 duration={500}
+                                offset={-80}
                                 className="text-white text-2xl font-medium hover:text-yellow-500 transition-colors"
                             >
-                                Attractions
+                                Endangered
                             </Link>
                         </li>
                         <li>
                             <Link 
                                 onClick={handleClick} 
-                                to="accommodation" 
+                                to="recommended" 
+                                spy={true}
                                 smooth={true} 
                                 duration={500}
+                                offset={-80}
                                 className="text-white text-2xl font-medium hover:text-yellow-500 transition-colors"
                             >
-                                Accommodation
+                                Recommended
                             </Link>
                         </li>
                         <li className="mt-8">
-                            <button className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300">
+                            <Link
+                                onClick={handleClick}
+                                to="newsletter"
+                                spy={true}
+                                smooth={true}
+                                duration={500}
+                                offset={-80}
+                                className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-gray-900 px-8 py-3 rounded-full font-medium hover:shadow-lg hover:scale-105 transition-all duration-300"
+                            >
                                 Subscribe
-                            </button>
+                            </Link>
                         </li>
                     </ul>
                 </div>

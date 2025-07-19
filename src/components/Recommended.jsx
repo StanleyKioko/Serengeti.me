@@ -19,7 +19,7 @@ const Recommended = () => {
   };
 
   return (
-    <div className="bg-[#000300] min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-white">
+    <div id="recommended" className="bg-[#000300] min-h-screen py-16 px-4 sm:px-6 lg:px-8 text-white">
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="text-center mb-16">
