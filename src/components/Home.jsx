@@ -7,6 +7,13 @@ import zebras from '../assets/Zebras.jpg'
 import { Link } from 'react-scroll'
 
 const Home = () => {
+  // Define URLs for animal info links
+  const animalUrls = {
+    lion: "https://www.worldwildlife.org/species/lion",
+    elephant: "https://www.worldwildlife.org/species/elephant",
+    zebra: "https://www.worldwildlife.org/species/zebra"
+  };
+
   return (
     <div id="home" className="min-h-screen bg-[#000300]">
       {/* Hero Section with Full-Height Background */}
@@ -79,18 +86,17 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Lions</h4>
                 <p className="text-gray-400">The kings of the Serengeti, ruling the savannah with their majestic presence.</p>
-                <Link 
-                  to="animals"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                <a 
+                  href={animalUrls.lion}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center"
                 >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
             
@@ -100,18 +106,17 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Elephants</h4>
                 <p className="text-gray-400">Intelligent gentle giants known for their remarkable memory and social bonds.</p>
-                <Link
-                  to="animals"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                <a
+                  href={animalUrls.elephant}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center"
                 >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
             
@@ -121,18 +126,17 @@ const Home = () => {
               <div className="p-6">
                 <h4 className="text-2xl font-bold text-white mb-2">Zebras</h4>
                 <p className="text-gray-400">Known for their distinctive stripes and social herds that roam the plains.</p>
-                <Link
-                  to="animals"
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center cursor-pointer"
+                <a
+                  href={animalUrls.zebra}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 text-yellow-400 hover:text-yellow-300 font-medium flex items-center"
                 >
                   Learn more
                   <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </a>
               </div>
             </div>
           </div>

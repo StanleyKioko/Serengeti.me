@@ -7,6 +7,17 @@ import Rhinoceros from '../assets/Rhinoceros.jpg'
 import buffalo from '../assets/Buffalo.jpg'
 
 const Animals = () => {
+  // Define URLs for the "Learn More" buttons
+  const animalUrls = {
+    lion: "https://www.worldwildlife.org/species/lion",
+    cheetah: "https://www.worldwildlife.org/species/cheetah",
+    elephant: "https://www.worldwildlife.org/species/elephant",
+    zebra: "https://www.worldwildlife.org/species/zebra",
+    rhinoceros: "https://www.worldwildlife.org/species/rhinoceros",
+    buffalo: "https://www.worldwildlife.org/species/african-buffalo",
+    conservation: "https://www.worldwildlife.org/initiatives/wildlife-conservation"
+  };
+
   return (
     <div id="animals" className="bg-[#000300] min-h-screen p-6 md:p-12">
       <div className="max-w-7xl mx-auto">
@@ -26,9 +37,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Lions</h2>
               <p className="text-gray-300 mb-4">Lions are known as the kings of the jungle, and they play a crucial role in the Serengeti ecosystem.</p>
-              <button className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a 
+                href={animalUrls.lion}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           
@@ -40,9 +56,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Cheetahs</h2>
               <p className="text-gray-300 mb-4">Cheetahs are the fastest land animals, capable of reaching speeds up to 70 mph in short bursts.</p>
-              <button className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a
+                href={animalUrls.cheetah}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange-600 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           
@@ -54,9 +75,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Elephants</h2>
               <p className="text-gray-300 mb-4">Elephants are the largest land animals on Earth, and they are known for their intelligence and strong social bonds.</p>
-              <button className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a
+                href={animalUrls.elephant}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           
@@ -68,9 +94,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Zebras</h2>
               <p className="text-gray-300 mb-4">Zebras are known for their distinctive black and white stripes, and they are social animals that live in herds.</p>
-              <button className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a
+                href={animalUrls.zebra}
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           
@@ -82,9 +113,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Rhinoceros</h2>
               <p className="text-gray-300 mb-4">Rhinos are known for their formidable horns and thick skin. They are among the most endangered species in Africa.</p>
-              <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a
+                href={animalUrls.rhinoceros}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           
@@ -95,9 +131,14 @@ const Animals = () => {
             <div className="p-6">
               <h2 className="text-2xl font-bold text-white mb-3">Buffalo</h2>
               <p className="text-gray-300 mb-4">African buffalo are powerful and unpredictable, considered one of the most dangerous animals in the Serengeti.</p>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300">
+              <a
+                href={animalUrls.buffalo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition-colors duration-300 inline-block"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
         </div>
@@ -105,9 +146,14 @@ const Animals = () => {
         {/* Additional Info Section */}
         <div className="mt-16 text-center">
           <p className="text-gray-400">Want to learn more about Serengeti wildlife conservation efforts?</p>
-          <button className="mt-4 bg-transparent hover:bg-white text-white hover:text-[#000300] border border-white font-bold py-3 px-8 rounded-full transition-colors duration-300">
+          <a
+            href={animalUrls.conservation}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 bg-transparent hover:bg-white text-white hover:text-[#000300] border border-white font-bold py-3 px-8 rounded-full transition-colors duration-300 inline-block"
+          >
             View Conservation Projects
-          </button>
+          </a>
         </div>
       </div>
     </div>
